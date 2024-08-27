@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url(b4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgba(254, 223, 237,0.4);
+    border-radius: 20px;
+    padding: 15px;
+    width: 60vw;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    max-width: 600px;
+    max-height: 90vh;
+}
+.container .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+@media (max-width: 600px){
+    .container{
+        width: 90%;
+        padding: 15px;
+        height: fit-content;
+    }
+    .container .title h1{
+        font-size: 20px;
+    }
+    .inputs input{
+        padding: 0;
+    }
+    .inputs label{
+        font-size: 15px;
+    }
+    .swag{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+.gends {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .gends input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .gends:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .gends input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .gends input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .gends .checkmark:after {
+    top: 4.5px;
+   left: 4.5px;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background: white;
+}
+label{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-shadow: .5px .5px 3px #ccc;
+}
+input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 6px #000;
+    outline: none;
+    font-family: cursive;
+    font-size: 16px;
+}
+.custom-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputs{
+    margin: 8px 0;
+}
+.inputs select option{
+    background: #2196F3;
+    font-size: 12px;
+}
+.inputs select{
+        padding: 1px 2px;
+        border-radius: 3px;
+        outline: none;
+        font-family: cursive;
+        font-size: 12px;
+}
+ .subm{
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 15px;
+    outline: none;
+    color: #ccecce;
+    background: #000;
+    font-size: 20px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+button .fa-plus{
+    transition: .3s ease-in-out;
+}
+button:hover{
+    background-color: #ccecce;
+    color: #000;
+    .fa-plus{
+        translate: 25px 0;
+    }
+}
+.swag{
+    flex-wrap: nowrap;
+}
+.valid{
+    width: 150px;
+    border-radius: 10px;
+}
+.validator{
+    display: flex;
+    gap: 20px;
+}

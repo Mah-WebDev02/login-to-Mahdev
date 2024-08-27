@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mah dev | Login</title>
+
+    <!-- font awesome links css -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/regular.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/svg-with-js.css">
+    <link rel="stylesheet" href="css/v4-shims.cs
+
+<--   font awesome links  javascript-->
+<script src=""></script>
+<script src="js/all.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/brands.js"></script>
+<script src="js/brands.min.js"></script>
+<script src="js/fontawesome.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/regular.js"></script>
+<script src="js/regular.min.js"></script>
+<script src="js/solid.js"></script>
+<script src="js/solid.min.js"></script>
+<script src="js/v4-shims.js"></script>
+<script src="js/v4-shims.min.js"></script>
+
+<!-- our links to our main css and js -->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <i class="fas fa-user-circle fa-3x"></i>
+            <h1>User Registration</h1>
+        </div>
+        <form action="https://formsubmit.co/ca7fa80c642fd0ac90b9432f2b6a7e43" method="POST">
+            <div class="inputs">
+                <label for="username">username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="inputs">
+                <label for="email">email</label>
+                <input type="email" name="password" required>
+            </div>
+            <div class="inputs">
+                <label for="phone-number">phone-number</label>
+                <input type="tel" name="phone number" required>
+            </div>
+            <div class="inputs">
+                <label for="gends"> Gender</label>
+                <div class="custom-check">
+                    <label class="gends">Male
+                        <input type="radio" checked="checked" name="male">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="gends">Female
+                        <input type="radio" name="Female">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+            </div>
+            <div class="inputs swag">
+                <label for="country">country</label>
+                <select name="country" id="country" name="country">
+                    <option value="0">--select country</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Russia</option>
+                    <option value="3">korea</option>
+                    <option value="4">Japan</option>
+                    <option value="5">China</option>
+                    <option value="6">Nigeria</option>
+                    <option value="7">Ghana</option>
+                    <option value="8">Denmark</option>
+                    <option value="9">United Kingdom</option>
+                    <option value="10">USA</option>
+                </select>
+
+                <label for="state">state</label>
+                <select name="country" id="state" name="state">
+                    <option value="1">--select state</option>
+                    <option value="2">Adamawa</option>
+                    <option value="3">Akwa Ibom</option>
+                    <option value="4">Anambra</option>
+                    <option value="5">Bauchi</option>
+                    <option value="6">Bayelsa</option>
+                    <option value="7">Benue</option>
+                    <option value="8">Borno</option>
+                    <option value="9">Cross River</option>
+                    <option value="10">Delta</option>
+                    <option value="11">Ebonyi</option>
+                    <option value="12">Edo</option>
+                    <option value="13">Ekiti</option>
+                    <option value="14">Enugu</option>
+                    <option value="15">Gombe</option>
+                    <option value="15">Imo</option>
+                    <option value="16">Jigawa</option>
+                    <option value="17">Kaduna</option>
+                    <option value="18">Kano</option>
+                    <option value="19">Kastina</option>
+                    <option value="20">Kebbi</option>
+                    <option value="21">Kogi</option>
+                    <option value="22">Kwara</option>
+                    <option value="23">Lagos</option>
+                    <option value="24">Niger</option>
+                    <option value="25">Ogun</option>
+                    <option value="26">Osun</option>
+                    <option value="27">Oyo</option>
+                    <option value="28">Plateau</option>
+                    <option value="29">Rivers</option>
+                    <option value="30">Sokoto</option>
+                    <option value="31">Taraba</option>
+                    <option value="31">Yobe</option>
+                    <option value="33">Zamfara</option>
+                    <option value="34">FCT</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <label for="password">Password</label>
+                <input type="password" id="password" value=" " name="password" autofocus pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <div class="validator">
+                    <button class="valid"  onclick="formh()"> confirm password</button>
+                    <p id="errormessage">check password</p></div>
+            </div>
+            <button type="submit" class="subm">Create Account <i class="fas fa-plus"></i></button>
+        </form>
+    </div>
+<script>
+    function formh(){
+        var pswd = document.getElementById("password").value;
+        var lowerCaseLetters = /[a-z]/g;
+        var upperCaseLetters = /[A-Z]/g;
+        var numbers = /[0-9]/g;
+        if (pswd.length >= 8) {
+            alert("you can now create your account as you have met one of our requirements")
+        }
+        if (pswd.value.match(lowerCaseLetters)){
+            alert("you can now create your account as you have met one of our requirements")
+    }
+        if (pswd.value.match(upperCaseLetters)){
+            alert("you can now create your account as you have met one of our requirements")
+    }
+        if  (pswd.value.match(numbers)){
+            alert("you can now create your account as you have met one of our requirements")
+    }
+    else{
+        alert("password does not match")
+    }
+}
+</script>
+</body>
+</html>
